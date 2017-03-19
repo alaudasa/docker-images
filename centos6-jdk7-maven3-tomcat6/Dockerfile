@@ -13,7 +13,7 @@ ENV JAVA_HOME /usr/java/latest
 ENV CATALINA_HOME /usr/local/tomcat6
 ENV PATH $CATALINA_HOME/bin:$PATH
 ENV TOMCAT_MAJOR 6
-ENV TOMCAT_VERSION 6.0.47
+ENV TOMCAT_VERSION 6.0.51
 ENV TOMCAT_TGZ_URL https://www.apache.org/dist/tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz
 RUN curl -SL "$TOMCAT_TGZ_URL" -o /tmp/tomcat.tar.gz \
   && tar -xvf /tmp/tomcat.tar.gz -C /usr/local/ \
