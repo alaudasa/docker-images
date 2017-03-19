@@ -30,3 +30,5 @@ ENV MAVEN_HOME /usr/share/maven
 
 COPY settings.xml /usr/share/maven/conf/settings.xml
 
+EXPOSE 8080
+CMD ["catalina.sh", "run"]
